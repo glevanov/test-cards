@@ -10,10 +10,30 @@
   padding: 0;
   width: $width-card-mobile;
 
+  @media (min-width: $breakpoint-tab) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-left: 24px;
+    margin-right: 0;
+    margin-top: 24px;
+    width: auto;
+  }
+
   &__item {
     margin-bottom: 12px;
+
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    @media (min-width: $breakpoint-tab) {
+      margin-bottom: 24px;
+      margin-right: 24px;
+
+      &:last-of-type {
+        margin-bottom: 24px;
+      }
     }
   }
 }

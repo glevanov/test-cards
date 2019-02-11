@@ -3,19 +3,59 @@
   font-family: $font-default;
   width: $width-card-mobile;
 
+  @media (min-width: $breakpoint-tab) {
+    color: $color-text-default;
+    width: $width-card-tab;
+  }
+
   &__link {
     color: inherit;
     display: flex;
     text-decoration: none;
+
+    @media (min-width: $breakpoint-tab) {
+      display: block;
+      position: relative;
+    }
   }
 
   &__image {
     border-radius: 4px;
     margin-right: 12px;
+    position: relative;
+
+    @media (min-width: $breakpoint-tab) {
+      margin-right: 0;
+    }
+  }
+
+  &__blackout {
+    @media (min-width: $breakpoint-tab) {
+      position: relative;
+
+      &::after {
+        background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%);
+        border-radius: 4px;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+      }
+    }
   }
 
   &__text-wrap {
     width: 175px;
+
+    @media (min-width: $breakpoint-tab) {
+      bottom: 12px;
+      left: 16px;
+      position: absolute;
+      width: 258px;
+    }
+
   }
 
   &__heading {
@@ -24,11 +64,21 @@
     line-height: 18px;
     margin: 0;
     margin-bottom: 4px;
+
+    @media (min-width: $breakpoint-tab) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__text {
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+
+    @media (min-width: $breakpoint-tab) {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
