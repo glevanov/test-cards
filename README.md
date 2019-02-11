@@ -3,7 +3,7 @@
 
 ## Коротко о главном
 * Демо: [GitHub Pages](https://glevanov.github.io/test-cards)
-* Исходники: ветка [gh-pages](https://github.com/glevanov/test-cards/tree/gh-pages)
+* Собранные файлы: ветка [gh-pages](https://github.com/glevanov/test-cards/tree/gh-pages)
 * Брейкпойнты: mobile first, планшет 768px, десктоп 1440px  
 
 ## Комментарии
