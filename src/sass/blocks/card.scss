@@ -8,6 +8,10 @@
     width: $width-card-tab;
   }
 
+  @media (min-width: $breakpoint-desktop) {
+    width: $width-card-desktop;
+  }
+
   &__link {
     color: inherit;
     display: flex;
@@ -56,6 +60,9 @@
       width: 258px;
     }
 
+    @media (min-width: $breakpoint-desktop) {
+      width: 241px;
+    }
   }
 
   &__heading {

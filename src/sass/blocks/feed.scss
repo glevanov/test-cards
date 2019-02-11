@@ -20,6 +20,11 @@
     width: auto;
   }
 
+  @media (min-width: $breakpoint-desktop) {
+    margin-left: 138px;
+    margin-right: calc(138px - 24px);
+  }
+
   &__item {
     margin-bottom: 12px;
 
