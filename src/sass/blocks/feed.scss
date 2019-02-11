@@ -13,10 +13,10 @@
   @media (min-width: $breakpoint-tab) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 0;
-    margin-left: 24px;
-    margin-right: 0;
-    margin-top: 24px;
+    margin-bottom: calc(100px - 24px);
+    margin-left: 82px;
+    margin-right: calc(82px - 24px);
+    margin-top: 100px;
     width: auto;
   }
 
