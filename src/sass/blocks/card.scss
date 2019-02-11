@@ -1,0 +1,34 @@
+.card {
+  color: $color-text-contrast;
+  font-family: $font-default;
+  width: $width-card-mobile;
+
+  &__link {
+    color: inherit;
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__image {
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+
+  &__text-wrap {
+    width: 175px;
+  }
+
+  &__heading {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+  }
+}
